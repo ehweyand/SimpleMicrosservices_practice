@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PHPUnit">
+    <option name="directories">
+      <list>
+        <option value="$PROJECT_DIR$/users_ms/tests/Unit" />
+        <option value="$PROJECT_DIR$/users_ms/tests/Feature" />
+        <option value="$PROJECT_DIR$/certificates_ms/tests/Unit" />
+        <option value="$PROJECT_DIR$/certificates_ms/tests/Feature" />
+        <option value="$PROJECT_DIR$/events_ms/tests/Unit" />
+        <option value="$PROJECT_DIR$/events_ms/tests/Feature" />
+      </list>
+    </option>
+  </component>
+</project>
