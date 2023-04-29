@@ -107,4 +107,11 @@ class CertificateController extends Controller
             ], 404);
         }
     }
+    public function authenticateCertificatePage(Request $request, $auth = null) {
+        $certificate = Certificate::with(['event', 'user'])->where('auth_code', $auth)->first();
+        if($certificate == null) {
+            return view('certificate-validation-failed');
+        }
+        return view('certificate-validation', compact('certificate'));
+    }
 }

@@ -71,7 +71,7 @@
     <h2>Certificado de Conclusão</h2>
     <p>Este certificado é apresentado a <strong>{{ $user->name }}</strong> por ter concluído o evento {{ $event->name }}.</p>
     <p>Data de emissão: {{ $emission_date->format('d/m/Y') }}</p>
-    <p class="code">Código para autenticação: {{ $auth_code }}</p>
+    <p class="code"><a href="http://177.44.248.68:8002/validar-certificado/{{ $auth_code }}">Clique aqui para verificar sua validade.</a></p>
 </div>
 
 <footer>
