@@ -14,5 +14,7 @@ Route::middleware('auth:sanctum')->prefix('events')->group(function () {
     Route::post('/{eventId}/signup', [EventController::class, 'signUpInEvent']);
     Route::post('/{eventId}/unsign', [EventController::class, 'removeSubscription']);
     Route::post('/markAttendance', [EventController::class, 'markAttendance']);
+    Route::get('/subscriptions/{id}', [EventController::class, 'subscriptionsByUser']);
+
 });
 

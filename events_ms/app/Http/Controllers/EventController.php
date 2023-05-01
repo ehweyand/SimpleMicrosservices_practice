@@ -18,6 +18,15 @@ class EventController extends Controller
         return response()->json($events);
     }
 
+    public function subscriptionsByUser($id) {
+        $subscriptions = Subscription::where('users_id', $id)->get();
+        if(!$subscriptions->isEmpty()) {
+            return response()->json($subscriptions);
+        } else {
+            return response()->json(['message' => 'No subscription found.'], 404);
+        }
+    }
+
     public function store(Request $request)
     {
         $event = new Event();

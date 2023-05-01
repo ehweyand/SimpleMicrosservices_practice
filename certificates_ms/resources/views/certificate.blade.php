@@ -75,7 +75,7 @@
 </div>
 
 <footer>
-    <p>© {{ date('Y') }} Tigre Eventos</p>
+    <p>© {{ date('d/m/Y') }} Tigre Eventos</p>
 </footer>
 </body>
 </html>
